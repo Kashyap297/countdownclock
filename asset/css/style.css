@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Digital-7';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #dde1e7;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #6b747c;
+    letter-spacing: 1px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.box:nth-child(2), .box:nth-child(4) {
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+.box span {
+    font-size: 120px;
+    color: rgba(94, 104, 121, 0.9);
+}
+
+.box:nth-child(2):before {
+    content: ":";
+    position: absolute;
+    left: -30px;
+    font-size: 130px;
+    color: rgba(94, 104, 121, 0.9);
+}
+
+.box:nth-child(2):after {
+    content: ":";
+    position: absolute;
+    right: -30px;
+    font-size: 130px;
+    color: rgba(94, 104, 121, 0.9);
+}
+.box:nth-child(3):after {
+    content: ":";
+    position: absolute;
+    right: -30px;
+    font-size: 130px;
+    color: rgba(94, 104, 121, 0.9);
+}
+.content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button{
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #71787e;
+    border: none;
+    background-color: #dde1e7;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: all ease-in-out 1s;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+    transition: all 1s ease-in-out ;
+}
+button:nth-child(2){
+    box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+button:nth-child(2):active{
+    box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
